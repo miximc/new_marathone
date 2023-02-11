@@ -15,14 +15,29 @@
         <a href="#news">Новости</a>
         <a href="#contact">Виды спорта</a>
         <a href="#about">Контакты</a>
-        <button id="rightcol" class="popup" onclick="myFunction()">Вход</button>
+        <a href="#zatemnenie" id="rightcol">Вход</a>
       </div>
 
-      <h1>window</h1>
-
+      <style>
+        
+      </style>
+    </head>
+   
+    <div id="zatemnenie">
+        <div id="okno">
+              <h1>Авторизация</h1>
+              <p>Введите ваши данные для входа:</p>
+              <form action="." method="post">
+                  {{ form.as_p }}
+                  {% csrf_token %}
+                  <p><input type="submit" value="Вход" id="sbm">
+                  <input type='button' value="Регистрация" id="reg" onclick="register()"></p>
+                  
+              </form> 
+          <a href="#" class="close">Закрыть окно</a>
+        </div>
+      </div>
+       
       
-      
-         
-</body>
 
 </html>
